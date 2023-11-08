@@ -88,7 +88,7 @@ a:active {
     color: var(--color-primary);
 }
 .card-services .card-title{
-    margin: none;
+    margin: 0;
 }
 .card-services a{
     display: block;
