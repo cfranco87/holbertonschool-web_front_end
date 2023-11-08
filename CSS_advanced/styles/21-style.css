@@ -157,8 +157,7 @@ ul.row{
 }
 [class^="col"]{
     float: left;
-    padding: 0.5rem;
-
+    padding: var(--section-padding);
 }
 .foot-copyright{
     margin: 0;
