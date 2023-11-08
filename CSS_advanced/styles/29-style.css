@@ -173,21 +173,26 @@ a:active {
     display: var(--nav-item-display);
     margin: var(--nav-item-margin);
 }
+.nav .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 0;
+    height: .20rem;
+}
 .nav .nav-link{
     display: block;
     padding: 0.5rem 1rem;
-    position: absolute;
-    content: "";
-    background-color: var(--color-white);
-    top: 0;
-    bottom: 0;
-    width: 0;
-    height: .2rem
 }
-.nav .nav-link:hover{
-    color: var(--nav-item-link-hover);
+.nav:hover .nav-item:hover .nav-link::before {
     background-color: var(--color-primary);
     width: 100%;
+}
+
+.nav .nav-link:hover{
+    color: var(--nav-item-link-hover);
 }
 ul.row{
     margin: 0;
