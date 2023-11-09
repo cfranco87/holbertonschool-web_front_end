@@ -257,11 +257,11 @@ ul.row{
     text-decoration: var(--button-text-decoration);
 }
 .button:hover{
-    color: var(--transition-property);
+    color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
-    background: var(--transition-property);
+    background: var(--button-hover-background);
     transition: var(--transition-duration);
-
+    transition-property: color, background-color;
 }
 .section-hero{
     background-size: 90rem auto;
@@ -332,7 +332,7 @@ ul.row{
     position: relative;
 }
 .card-testimonial .card-quote::before{
-    content: \201C;
+    content: "\201C";
     position: absolute;
     top: -4.5rem;
     left: -1rem;
@@ -340,12 +340,10 @@ ul.row{
     font-size: 10rem;
     z-index: -1;
 }
-.card-work .card-image:hover{
-    transform: scale(1.2);
-}
-.card-work .card-outer:hover{
-    transform: scale(0.95);
-}
 .card-work:hover .card-image{
+    transform: scale(1.2);
     transition:  var(–-transition-duration) var(--transition-cubic-bezier);
+}
+.card-work:hover .card-outer{
+    transform: scale(0.95);
 }
