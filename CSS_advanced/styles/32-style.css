@@ -261,7 +261,7 @@ ul.row{
     text-decoration: var(--button-hover-text-decoration);
     background: var(--button-hover-background);
     transition: var(--transition-duration);
-    transition-property: color, background-color;
+    transition-property: color, var(--background-color);
 }
 .section-hero{
     background-size: 90rem auto;
@@ -342,7 +342,7 @@ ul.row{
 }
 .card-work:hover .card-image{
     transform: scale(1.2);
-    transition:  var(–-transition-duration) var(--transition-cubic-bezier);
+    transition: var(–-transition-duration) var(--transition-cubic-bezier);
 }
 .card-work:hover .card-outer{
     transform: scale(0.95);
